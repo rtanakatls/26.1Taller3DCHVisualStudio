@@ -8,10 +8,24 @@ namespace Taller3DCH261
 {
     internal class Menu
     {
+        private List<Shape> shapes;
 
         public void Execute()
         {
-            E1();
+            ShapeTest();
+        }
+
+        private void ShapeTest()
+        {
+            shapes=new List<Shape>();
+            shapes.Add(new Circle("C1", 10));
+            shapes.Add(new Circle("C2", 10));
+            shapes.Add(new Rectangle("R1", 5, 10));
+
+            foreach (Shape shape in shapes)
+            {
+                Console.WriteLine($"Figura {shape.Name} - {shape.GetArea()}");
+            }
         }
 
         private void E1()
