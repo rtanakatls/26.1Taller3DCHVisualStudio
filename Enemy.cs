@@ -8,5 +8,6 @@ namespace Taller3DCH261
 {
     internal class Enemy
     {
+        private string name;
     }
 }
