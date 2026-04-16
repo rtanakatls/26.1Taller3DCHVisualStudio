@@ -11,11 +11,13 @@ namespace Taller3DCH261
 
         protected string name;
         protected int life;
+        protected int damage;
 
-        public Character(string name, int life)
+        public Character(string name, int life, int damage)
         {
             this.name = name;
             this.life = life;
+            this.damage = damage;
         }
     }
 }
