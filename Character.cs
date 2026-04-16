@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Taller3DCH261
 {
-    internal class Enemy : Character
+    internal class Character
     {
+
+        protected string name;
+        protected int life;
     }
 }
